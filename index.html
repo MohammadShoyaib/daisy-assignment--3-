@@ -22,7 +22,57 @@
 <body>
     <header>
       <!-- nav -->
-      
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="text-2xl lg:text-4xl font-extrabold text-title-color"
+            >Hockeys <span class="text-[#FF4240;]">’</span> s</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-base">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <i class="fa-solid fa-magnifying-glass mr-5 cursor-pointer"></i>
+          <a
+            class="btn bg-[#FF4240;] text-white font-semibold text-base lg:text-xl"
+            >Get Ticket</a
+          >
+        </div>
+      </div>
       <!-- nav done -->
         <!-- banner section -->
         <div class="carousel w-full mt-12">
@@ -291,6 +341,37 @@
                         </div>
                       </div>
                     </div>
+                  </div>
+                </section>
+
+                <!-- get in touch section -->
+                <section>
+                  <div class="border my-20">
+                    <h1 class="text-xl font-bold text-center
+                  ">Get In Touch</h1>
+                  <p class="text-base text-[#13131899] text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
+                  </div>
+                  <!-- parent -->
+                  <div class="bg-gray-100 sm:grid grid-cols-1 gap-3 lg:grid grid-cols-2 gap-7 mx-5 ">
+                    <form class="grid grid-cols-2 gap-4 max-w-md p-8 bg-white rounded-lg shadow-md">
+                      <label for="name" class="">Name:</label>
+                      <input type="text" id="name" name="name" class="col-span-1 p-2 border border-gray-300 rounded-md" required>
+                  
+                      <label for="email" class="col-span-1">Email:</label>
+                      <input type="email" id="email" name="email" class="col-span-1 p-2 border border-gray-300 rounded-md" required>
+                  
+                      <label for="subject" class="col-span-1">Subject:</label>
+                      <input type="text" id="subject" name="subject" class="col-span-1 p-2 border border-gray-300 rounded-md" required>
+                  
+                      <label for="contact" class="col-span-1">Contact:</label>
+                      <input type="text" id="contact" name="contact" class="col-span-1 p-2 border border-gray-300 rounded-md" required>
+                  
+                      <label for="message" class="col-span-1">Message:</label>
+                      <textarea id="message" name="message" rows="4" class="col-span-1 p-2 border border-gray-300 rounded-md" required></textarea>
+                  
+                      <input type="submit" value="Submit" class="col-span-2 bg-green-500 text-white p-2 rounded-md cursor-pointer hover:bg-green-600">
+                    </form>
+                  
                   </div>
                 </section>
     </main>
